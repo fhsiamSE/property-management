@@ -4,7 +4,7 @@ import TrustedCompanies from '../components/TrustedCompanies';
 import ServiceCards from '../components/ServiceCards';
 import Pricing from '../components/Pricing';
 import OurTools from '../components/OurTools';
-import Testimonials from '../components/Testimonials';
+import Reviews from '../components/Reviews';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import GetStarted from '../components/GetStaeted';
@@ -20,6 +20,7 @@ export default function Home() {
         <Pricing />
         <OurTools />
         <GetStarted />
+        <Reviews />
         {/* 
         <Testimonials /> */}
         {/* <FAQ /> */}
