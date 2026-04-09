@@ -1,7 +1,7 @@
 export default function GetStarted() {
 
 
-  const Steps =[
+  const Steps = [
     {
       step: 1,
       stepicon: "/icons/stepicon1.1.png",
@@ -69,7 +69,7 @@ export default function GetStarted() {
           Easy
         </span>
       </div>
-      
+
       <div
         style={{
           width: '738px',
@@ -79,7 +79,7 @@ export default function GetStarted() {
           position: 'relative',
           opacity: 1,
           fontFamily: 'DM Sans',
-           padding: '50px',
+          padding: '50px',
           fontWeight: '500',
           fontStyle: 'Medium',
           fontSize: '14px',
@@ -141,8 +141,8 @@ export default function GetStarted() {
                 src={step.stepicon}
                 alt={`Step ${step.step}`}
                 style={{
-                   top: '-40px',
-                left: '-130px',
+                  top: '-40px',
+                  left: '-130px',
                   width: '72.18px',
                   height: '58px',
                   position: 'relative',
@@ -150,19 +150,18 @@ export default function GetStarted() {
                   objectFit: 'contain'
                 }}
               />
-              
+
             </div>
-                <img
-                src={step.icon}
-                alt={`Step ${step.step}`}
-                style={{
-                  width: '72.18px',
-                  height: '58px',
-                  position: 'relative',
-                  opacity: 1,
-                  objectFit: 'contain'
-                }}
-              />
+            <img
+              src={step.icon}
+              alt={`Step ${step.step}`}
+              style={{
+                top: '',
+                position: 'absolute',
+                opacity: 1,
+                objectFit: 'contain'
+              }}
+            />
             {/* Step Title */}
             <h3
               style={{
@@ -187,6 +186,58 @@ export default function GetStarted() {
             </h3>
           </div>
         ))}
+      </div>
+      
+      {/* Choose Us Image */}
+      <div
+        style={{
+          width: '1240px',
+          height: '627px',
+          top: '4350px',
+          left: '90px',
+          position: 'absolute',
+          opacity: 1
+        }}
+      >
+        <img
+          src="/images/chooseus.png"
+          alt="Why Choose Us"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }}
+        />
+          <button 
+          className="text-white transition-all duration-300 hover:bg-pink-700 hover:shadow-lg hover:scale-105"
+          style={{
+            width: '201px',
+            height: '50px',
+            top: '495px',
+            left: "88px",
+            opacity: 1,
+            backgroundColor: 'rgba(237, 60, 106, 1)',
+            borderRadius: '5px',
+            gap: '10px',
+            paddingTop: '18px',
+            paddingRight: '24px',
+            paddingBottom: '18px',
+            paddingLeft: '24px',
+            position: 'absolute',
+            fontFamily: 'DM Sans',
+            fontWeight: '700',
+            fontStyle: 'Bold',
+            fontSize: '14px',
+            lineHeight: '100%',
+            letterSpacing: '0px',
+            textAlign: 'center',
+            verticalAlign: 'middle',
+            cursor: 'pointer',
+            border: 'none'
+          }}
+        >
+          Schedule A Meeting {'→'}
+        </button>
       </div>
     </div>
   );
