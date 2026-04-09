@@ -21,11 +21,9 @@ export default function Home() {
         <OurTools />
         <GetStarted />
         <Reviews />
-        {/* 
-        <Testimonials /> */}
-        {/* <FAQ /> */}
+        <FAQ />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
